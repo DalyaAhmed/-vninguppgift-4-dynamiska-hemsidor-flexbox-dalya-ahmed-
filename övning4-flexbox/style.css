@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: lato, sans-serif;
+    background: cadetblue;   
+}
+
+h2{
+    text-align: center;
+    padding: 16px;
+    margin: 32px 0px;
+    border-bottom: 1px solid black;
+    color: rgd(88, 37, 37);
+}
+
+.wrapper{
+    margin: 64px;
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.face {
+    display: flex;
+    background: rgd(216, 216,216);
+    width:100px;
+    height: 100px;
+    border-radius: 8px;
+    border: 2px solid black;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.dot{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: black;
+}
+
+.one{
+    align-items: center; /* " MOVE VERITICALY" the item (dot), will stay on the same caloumn but will move to the center(middel) of the coloumn. */
+    justify-content: center; /*  "MOVE HEROZINTLY" will stay in the same (row) but will be in the center of the column*/
+}
+
+.two{
+    justify-content: space-between;/* "make space among item horizantily" */
+}
+
+/* from class two and dot will chose only the even numbers and apply the propreties on them */
+.two .dot:nth-of-type(2){
+    align-self: flex-end;    
+}
+
+.three{
+    justify-content: space-between;
+}
+
+.three .dot:nth-of-type(2){
+    align-self: center;    
+}
+
+.three .dot:nth-of-type(3){
+    align-self: flex-end;    
+}
+
+.container{
+    display: flex;
+}
+
+.four{
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+
+.four .container{
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.five{
+    justify-content: space-between;
+}
+
+.five .container{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.five .container:nth-of-type(2){
+    align-self: center;
+}
+
+.six{
+    justify-content: space-between;
+}
+
+.six .container{
+    flex-direction: column;
+    justify-content: space-between;
+}

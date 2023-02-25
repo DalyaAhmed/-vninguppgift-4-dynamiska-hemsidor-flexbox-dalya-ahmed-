@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: lato, sans-serif;
+    background: cadetblue;   
+}
+
+/* to center the contain make the padding = 16px ex: h2{padding : 16px} will be centered*/
+/* align-items
+align-self
+justify-content
+flex-wrap
+flex-direction */
